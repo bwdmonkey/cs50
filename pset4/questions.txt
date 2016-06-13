@@ -1,0 +1,19 @@
+0.  BMP - 32 bits (4 billion colors), GIF - 8 bits (256 colors), PNG - 24 bits (16 million colors), JPEG - 24 bits (16 million colors)
+1.  GIF
+2.  Whether all original data can be recovered when the file is uncompressed
+3.  JPEG
+4.  System modifies the filename's first character in file's directory to signal that file has been deleted and can be recycled. Then the system moves all of the file's FAT clusters to free clusters, which can be overwritten.
+5.  Fill every addressable block with ASCII NULL bytes or random characters.
+6.  The <stdint.h> header shall declare sets of integer types having specified widths, and shall define corresponding sets of macros. It shall also define macros that specify limits of integer types corresponding to types defined in other standard headers.
+7.  When you want an integer type guaranteed to be exactly x bits in size
+8.  BYTE - 1 byte, DWORD - 4 bytes, LONG - 4 bytes, WORD - 2 byte
+9.  BM
+10. bfSize - The size, in bytes, of the bitmap file. biSize - Specifies the number of bytes required by the structure. This value does not include the size of the color table or the size of the color masks, if they are appended to the end of structure. In short, biSize is the size of the information header and bfSize is the size of the file.
+11. If biHeight is negative, the bitmap is a top-down DIB (Device independent bitmaps) with the origin at the upper left corner.
+12. biXPelsPerMeter, biYPelsPerMeter, biBitCount
+13. There are many reasons fopen can return NULL including (but certainly not limited to): The file doesn't exist, The file is opened in a mode that doesn't allow other accesses, The network is down, The file exists, but you don't have permissions
+14. The third argument specifies how many elements you want to read, and we're always reading a struct so we only need 1 struct.
+15. 4 - ((3 * 3) % 4) % 4 = 3
+16. The int fseek(FILE *stream, long int offset, int whence) function sets the file position of the stream to the given offset.
+17. SEEK_CUR is the current position of the file pointer
+18. BLUE CLUE!
