@@ -1,0 +1,11 @@
+0.  Pneumonoultramicroscopicsilicovolcanoconiosis is a lung disease that is otherwise known as silicosis.
+1.  getrusage is a function which get the resource usage. It will return the resource usage measures for RUAGE_SELF, RUSAGE_CHILDEREN, RUSAGE_THREAD.
+2.  The rusage struct has 16 members.
+3.  If the value at that pointers address is changed in the function, the value is also changed in main(). On the other hand, if the value in a variable is changed in the function, the value is only changed in the variable used inside the function. We are editing the values for both the function and the main(), therefore it is more appropriate to use variable by reference than by value.
+4.  The main goes about reading the words from a file through the function's for loop. The for loop works by taking a character from the file and running through couple of conditions. Condition A is if the character is alphabetical, put it under an array called word. It also checks if the size of the word is too big an actual word with the max length of pneumonoultramicroscopicsilicovolcanoconiosis. And with word length checking it will clear up the remainder of the alphabetical string which probably isn't an actual word. Then condition B is to check if the character is a digit/number. This condition will do the same thing as the word length checking and consume rest of the string. The last condition is condition C where condition A has successfully completed and restarted the for loop. If the index count for the word is greater than 0 but the character isn't an alphabet or a number, it must be the end of the word. Therefore we add \0 to indicate end of the word. (words is the counter for how many words are in the file.) Then the word's spelling is checked using the check function which is the dictionary header file. And the time to check is added up. And if the word is misspelled the word is printed and the counter goes up. And then we reset the index counter in order to prepare for the next word.
+5.  fgetc read every character including space whereas fscanf will read until any blank space until a blank space. However fscanf need to have a specified buffer size.
+6.  We use const for the parameters of load, and check because they are only meant to be read from. 
+7.  TODO
+8.  TODO
+9.  TODO
+10. TODO
